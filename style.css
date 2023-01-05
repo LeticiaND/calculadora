@@ -69,7 +69,6 @@ background: linear-gradient(180deg, rgba(218,174,174,1) 0%, rgba(159,118,100,1) 
     position: absolute;
     width: 430px;
     height: 630px;
-    /* background: #c28686; */
     background: #a57f64;
     z-index: -1;
     top: 45px;
