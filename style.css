@@ -1,0 +1,79 @@
+*{
+ 
+    font-family: 'roboto', 'sans-serif';
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, #cda582, #9f7664);
+}
+.grid-container{
+    border-color: black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    
+}
+.grid-container > button{
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    background-color: rgba(126,93,78,255);
+    color: #eee;
+    border-radius: 50px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: none;
+}
+.grid-container > button:hover{
+    background-color: #eee;
+    color: rgb(14, 12, 12);
+}
+.grid-container > .operator{
+    background: #916a59; 
+    border-radius: 50px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.span-two{
+    grid-column: span 2;
+}
+.grid-container > .output {
+    grid-column: 1 / -1;
+    border-radius: 10px;
+    /* background: rgb(218,174,174);
+background: linear-gradient(180deg, rgba(218,174,174,1) 0%, rgba(159,118,100,1) 100%); */
+    display: flex;
+    border-width: 1px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  }
+  
+.grid-container > .output > .previous-operand{
+    color: rgba(255, 255, 255, 75); 
+    font-size: 1.5rem;
+}
+.grid-container > .output > .current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
+
+#background-test {
+    position: absolute;
+    width: 430px;
+    height: 630px;
+    /* background: #c28686; */
+    background: #a57f64;
+    z-index: -1;
+    top: 45px;
+    left: 470px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
